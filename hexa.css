@@ -1,0 +1,49 @@
+.app-container {
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.x-hexagon {
+  min-width: 121.24px;
+  width: 121.24px;
+  height: 70px;
+  background-color: #2e3b51;
+  position: relative;
+  float: left;
+  text-align: center;
+  zoom: 1;
+  margin: 21px 3.5px; }
+  .x-hexagon .corner-1,
+  .x-hexagon .corner-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    overflow: hidden;
+    z-index: -2; }
+  .x-hexagon .corner-1 {
+    z-index: -1;
+    transform: rotate(60deg); }
+  .x-hexagon .corner-2 {
+    z-index: -2;
+    transform: rotate(-60deg); }
+  .x-hexagon .content {
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    padding: 5px;
+    display: inline-block; }
+
+.x-hexagon:first-child {
+  margin-top: 35px; }
+
+.x-hexagon:nth-child(odd) {
+  margin-top: 40px; }
+
+.x-hexagon:nth-child(even) {
+  margin-top: 147px;
+  margin-right: -60.62px;
+  margin-bottom: -3px;
+  margin-left: -60.62px; }
