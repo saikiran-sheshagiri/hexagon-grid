@@ -1,0 +1,61 @@
+$hexa-size: 70px;
+$hexa-color: #2e3b51;
+
+.app-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.x-hexagon {
+    min-width: $hexa-size * 1.732;
+    width: $hexa-size * 1.732;
+    height: $hexa-size;
+    background-color: $hexa-color;
+    position: relative;
+    float: left;
+    text-align: center;
+    zoom: 1;
+    margin: ($hexa-size/4)+($hexa-size/20) $hexa-size/20;
+    .corner-1,
+    .corner-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        overflow: hidden;
+        z-index: -2;
+    }
+    .corner-1 {
+        z-index: -1;
+        transform: rotate(60deg);
+    }
+    .corner-2 {
+        z-index: -2;
+        transform: rotate(-60deg);
+    }
+    .content {
+        width: 90%;
+        height: 90%;
+        overflow: hidden;
+        padding: 5px;
+        display: inline-block;
+    }
+}
+
+.x-hexagon:first-child{
+    margin-top: $hexa-size * 0.5;
+}
+
+.x-hexagon:nth-child(odd){
+    margin-top: $hexa-size * 0.5 + 5px;
+}
+
+.x-hexagon:nth-child(even){
+    margin-top: $hexa-size * 2 + 7px; //5px is the gap between the hexagons
+    margin-right: -($hexa-size * 1.732) / 2; 
+    margin-bottom: -3px;
+    margin-left: -($hexa-size * 1.732) / 2; 
+}
