@@ -4,15 +4,15 @@
   position: absolute; }
 
 .x-hexagon {
-  min-width: 121.24px;
-  width: 121.24px;
-  height: 70px;
+  min-width: 34.64px;
+  width: 34.64px;
+  height: 20px;
   background-color: #2e3b51;
   position: relative;
   float: left;
   text-align: center;
   zoom: 1;
-  margin: 21px 3.5px; }
+  margin: 6px 1px; }
   .x-hexagon .corner-1,
   .x-hexagon .corner-2 {
     position: absolute;
@@ -37,13 +37,13 @@
     display: inline-block; }
 
 .x-hexagon:first-child {
-  margin-top: 35px; }
+  margin-top: 10px; }
 
 .x-hexagon:nth-child(odd) {
-  margin-top: 40px; }
+  margin-top: 15px; }
 
 .x-hexagon:nth-child(even) {
-  margin-top: 147px;
-  margin-right: -60.62px;
+  margin-top: 47px;
+  margin-right: -17.32px;
   margin-bottom: -3px;
-  margin-left: -60.62px; }
+  margin-left: -17.32px; }
